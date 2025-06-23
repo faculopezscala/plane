@@ -1,0 +1,10 @@
+name: Sign In Form Validation
+page: /
+page_path: app/page.tsx
+task: Test the user sign in functionality
+steps:
+- Navigate to the root page
+- Enter valid email and password credentials in the InstanceSignInForm
+- Click the sign in button
+- Verify successful authentication redirect
+expected_result: User should be able to submit the sign in form with valid credentials

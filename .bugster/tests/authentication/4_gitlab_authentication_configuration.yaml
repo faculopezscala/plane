@@ -1,0 +1,10 @@
+name: GitLab Authentication Configuration
+page: /authentication/gitlab
+page_path: app/authentication/gitlab/page.tsx
+task: Test the GitLab authentication configuration form
+steps:
+- Navigate to the GitLab authentication page
+- Verify the GitLab configuration form loads correctly
+- Fill in the required GitLab OAuth credentials
+- Submit the form and verify success message
+expected_result: User should be able to configure GitLab authentication settings

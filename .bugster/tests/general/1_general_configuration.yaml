@@ -1,0 +1,10 @@
+name: General Configuration
+page: /general
+page_path: app/general/page.tsx
+task: Test the general configuration form
+steps:
+- Navigate to the general configuration page
+- Verify the general configuration form loads correctly
+- Update instance name and other general settings
+- Submit the form and verify changes are saved
+expected_result: User should be able to update general instance settings

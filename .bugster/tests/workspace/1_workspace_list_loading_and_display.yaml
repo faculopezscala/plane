@@ -1,0 +1,11 @@
+name: Workspace List Loading and Display
+page: /workspace
+page_path: app/workspace/page.tsx
+task: Test the workspace listing functionality
+steps:
+- Navigate to the workspace page
+- Verify the loader is displayed while data is fetching
+- Confirm workspace items are rendered correctly when data loads
+- Verify the create workspace button is present and clickable
+expected_result: The page should display a list of workspaces with proper loading
+  states

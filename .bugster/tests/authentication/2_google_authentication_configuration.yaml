@@ -1,0 +1,10 @@
+name: Google Authentication Configuration
+page: /authentication/google
+page_path: app/authentication/google/page.tsx
+task: Test the Google authentication configuration form
+steps:
+- Navigate to the Google authentication page
+- Verify the Google configuration form loads correctly
+- Fill in the required Google OAuth credentials
+- Submit the form and verify success message
+expected_result: User should be able to configure Google authentication settings

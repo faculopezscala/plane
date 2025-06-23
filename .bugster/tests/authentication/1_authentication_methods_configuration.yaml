@@ -1,0 +1,10 @@
+name: Authentication Methods Configuration
+page: /authentication
+page_path: app/authentication/page.tsx
+task: Test the authentication methods configuration page
+steps:
+- Navigate to the authentication page
+- Verify the page loads with the correct authentication modes
+- Toggle one of the authentication switches
+- Verify the toggle state changes accordingly
+expected_result: User should be able to view and toggle available authentication methods

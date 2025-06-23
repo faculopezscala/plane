@@ -1,0 +1,334 @@
+{
+  "metadata": {
+    "timestamp": 1750689620.043885,
+    "version": 2,
+    "git": {
+      "branch": "preview",
+      "commit": "7045a1f2af11b1fc89d0ab87671a2312c37d7b5c"
+    }
+  },
+  "data": {
+    "framework": {
+      "id": "next",
+      "name": "Next.js",
+      "dir_path": "/Users/facundolopezscala/coding-repos/plane/plane/admin"
+    },
+    "router_type": "app",
+    "stats": {
+      "fileCount": 93,
+      "routeCount": 11,
+      "apiRouteCount": 0,
+      "layoutCount": 1
+    },
+    "layouts": [
+      {
+        "name": "function",
+        "relative_file_path": "app/workspace/layout.tsx",
+        "relative_dir_path": "app/workspace",
+        "content": "import { ReactNode } from \"react\";\nimport { Metadata } from \"next\";\n// layouts\nimport { AdminLayout } from \"@/layouts/admin-layout\";\n\nexport const metadata: Metadata = {\n  title: \"Workspace Management - Plane Web\",\n};\n\nexport default function WorkspaceManagementLayout({ children }: { children: ReactNode }) {\n  return <AdminLayout>{children}</AdminLayout>;\n}\n",
+        "components": [
+          "AdminLayout"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "routePath": "/ai",
+        "relativeFilePath": "app/ai/page.tsx",
+        "layoutChain": [],
+        "components": [
+          "Loader",
+          "InstanceAIForm"
+        ],
+        "hasParams": false,
+        "hasForm": false,
+        "hooks": [
+          "useInstance",
+          "useSWR"
+        ],
+        "eventHandlers": [],
+        "featureFlags": []
+      },
+      {
+        "routePath": "/authentication/github",
+        "relativeFilePath": "app/authentication/github/page.tsx",
+        "layoutChain": [],
+        "components": [
+          "ToggleSwitch",
+          "AuthenticationMethodCard",
+          "Loader",
+          "Image",
+          "PageHeader",
+          "InstanceGithubConfigForm"
+        ],
+        "hasParams": false,
+        "hasForm": false,
+        "hooks": [
+          "useInstance",
+          "useTheme",
+          "useSWR"
+        ],
+        "eventHandlers": [],
+        "featureFlags": []
+      },
+      {
+        "routePath": "/authentication/gitlab",
+        "relativeFilePath": "app/authentication/gitlab/page.tsx",
+        "layoutChain": [],
+        "components": [
+          "ToggleSwitch",
+          "AuthenticationMethodCard",
+          "Loader",
+          "Image",
+          "InstanceGitlabConfigForm",
+          "PageHeader"
+        ],
+        "hasParams": false,
+        "hasForm": false,
+        "hooks": [
+          "useInstance",
+          "useSWR"
+        ],
+        "eventHandlers": [],
+        "featureFlags": []
+      },
+      {
+        "routePath": "/authentication/google",
+        "relativeFilePath": "app/authentication/google/page.tsx",
+        "layoutChain": [],
+        "components": [
+          "ToggleSwitch",
+          "AuthenticationMethodCard",
+          "Loader",
+          "InstanceGoogleConfigForm",
+          "Image",
+          "PageHeader"
+        ],
+        "hasParams": false,
+        "hasForm": false,
+        "hooks": [
+          "useInstance",
+          "useSWR"
+        ],
+        "eventHandlers": [],
+        "featureFlags": []
+      },
+      {
+        "routePath": "/authentication",
+        "relativeFilePath": "app/authentication/page.tsx",
+        "layoutChain": [],
+        "components": [
+          "ToggleSwitch",
+          "Loader",
+          "AuthenticationModes"
+        ],
+        "hasParams": false,
+        "hasForm": false,
+        "hooks": [
+          "useInstance",
+          "useSWR"
+        ],
+        "eventHandlers": [],
+        "featureFlags": []
+      },
+      {
+        "routePath": "/email",
+        "relativeFilePath": "app/email/page.tsx",
+        "layoutChain": [],
+        "components": [
+          "InstanceEmailForm",
+          "Loader"
+        ],
+        "hasParams": false,
+        "hasForm": false,
+        "hooks": [
+          "useInstance",
+          "useSWR"
+        ],
+        "eventHandlers": [],
+        "featureFlags": []
+      },
+      {
+        "routePath": "/general",
+        "relativeFilePath": "app/general/page.tsx",
+        "layoutChain": [],
+        "components": [
+          "GeneralConfigurationForm"
+        ],
+        "hasParams": false,
+        "hasForm": false,
+        "hooks": [
+          "useInstance"
+        ],
+        "eventHandlers": [],
+        "featureFlags": []
+      },
+      {
+        "routePath": "/image",
+        "relativeFilePath": "app/image/page.tsx",
+        "layoutChain": [],
+        "components": [
+          "Loader",
+          "InstanceImageConfigForm"
+        ],
+        "hasParams": false,
+        "hasForm": false,
+        "hooks": [
+          "useInstance",
+          "useSWR"
+        ],
+        "eventHandlers": [],
+        "featureFlags": []
+      },
+      {
+        "routePath": "/",
+        "relativeFilePath": "app/page.tsx",
+        "layoutChain": [],
+        "components": [
+          "InstanceSignInForm",
+          "DefaultLayout"
+        ],
+        "hasParams": false,
+        "hasForm": false,
+        "hooks": [],
+        "eventHandlers": [],
+        "featureFlags": []
+      },
+      {
+        "routePath": "/workspace/create",
+        "relativeFilePath": "app/workspace/create/page.tsx",
+        "layoutChain": [
+          "function"
+        ],
+        "components": [
+          "WorkspaceCreateForm"
+        ],
+        "hasParams": false,
+        "hasForm": false,
+        "hooks": [],
+        "eventHandlers": [],
+        "featureFlags": []
+      },
+      {
+        "routePath": "/workspace",
+        "relativeFilePath": "app/workspace/page.tsx",
+        "layoutChain": [
+          "function"
+        ],
+        "components": [
+          "ToggleSwitch",
+          "WorkspaceListItem",
+          "Loader",
+          "Link",
+          "Button",
+          "LoaderIcon"
+        ],
+        "hasParams": false,
+        "hasForm": false,
+        "hooks": [
+          "useInstance",
+          "useWorkspace",
+          "useSWR"
+        ],
+        "eventHandlers": [],
+        "featureFlags": []
+      }
+    ],
+    "api_routes": [],
+    "all_paths": [
+      "app/ai/form.tsx",
+      "app/ai/layout.tsx",
+      "app/ai/page.tsx",
+      "app/authentication/github/form.tsx",
+      "app/authentication/github/page.tsx",
+      "app/authentication/gitlab/form.tsx",
+      "app/authentication/gitlab/page.tsx",
+      "app/authentication/google/form.tsx",
+      "app/authentication/google/page.tsx",
+      "app/authentication/layout.tsx",
+      "app/authentication/page.tsx",
+      "app/email/email-config-form.tsx",
+      "app/email/layout.tsx",
+      "app/email/page.tsx",
+      "app/email/test-email-modal.tsx",
+      "app/error.tsx",
+      "app/general/form.tsx",
+      "app/general/intercom.tsx",
+      "app/general/layout.tsx",
+      "app/general/page.tsx",
+      "app/image/form.tsx",
+      "app/image/layout.tsx",
+      "app/image/page.tsx",
+      "app/layout.tsx",
+      "app/page.tsx",
+      "app/workspace/create/form.tsx",
+      "app/workspace/create/page.tsx",
+      "app/workspace/layout.tsx",
+      "app/workspace/page.tsx",
+      "ce/components/authentication/authentication-modes.tsx",
+      "ce/components/authentication/index.ts",
+      "ce/components/common/index.ts",
+      "ce/components/common/upgrade-button.tsx",
+      "ce/store/root.store.ts",
+      "core/components/admin-sidebar/help-section.tsx",
+      "core/components/admin-sidebar/index.ts",
+      "core/components/admin-sidebar/root.tsx",
+      "core/components/admin-sidebar/sidebar-dropdown.tsx",
+      "core/components/admin-sidebar/sidebar-menu-hamburger-toogle.tsx",
+      "core/components/admin-sidebar/sidebar-menu.tsx",
+      "core/components/auth-header.tsx",
+      "core/components/authentication/auth-banner.tsx",
+      "core/components/authentication/authentication-method-card.tsx",
+      "core/components/authentication/email-config-switch.tsx",
+      "core/components/authentication/github-config.tsx",
+      "core/components/authentication/gitlab-config.tsx",
+      "core/components/authentication/google-config.tsx",
+      "core/components/authentication/index.ts",
+      "core/components/authentication/password-config-switch.tsx",
+      "core/components/common/banner.tsx",
+      "core/components/common/breadcrumb-link.tsx",
+      "core/components/common/code-block.tsx",
+      "core/components/common/confirm-discard-modal.tsx",
+      "core/components/common/controller-input.tsx",
+      "core/components/common/copy-field.tsx",
+      "core/components/common/empty-state.tsx",
+      "core/components/common/index.ts",
+      "core/components/common/logo-spinner.tsx",
+      "core/components/common/page-header.tsx",
+      "core/components/common/password-strength-meter.tsx",
+      "core/components/instance/index.ts",
+      "core/components/instance/instance-failure-view.tsx",
+      "core/components/instance/instance-not-ready.tsx",
+      "core/components/instance/setup-form.tsx",
+      "core/components/login/index.ts",
+      "core/components/login/sign-in-form.tsx",
+      "core/components/new-user-popup.tsx",
+      "core/components/workspace/index.ts",
+      "core/components/workspace/list-item.tsx",
+      "core/hooks/store/index.ts",
+      "core/hooks/store/use-instance.tsx",
+      "core/hooks/store/use-theme.tsx",
+      "core/hooks/store/use-user.tsx",
+      "core/hooks/store/use-workspace.tsx",
+      "core/layouts/admin-layout.tsx",
+      "core/layouts/default-layout.tsx",
+      "core/lib/auth-helpers.tsx",
+      "core/lib/instance-provider.tsx",
+      "core/lib/store-provider.tsx",
+      "core/lib/user-provider.tsx",
+      "core/store/instance.store.ts",
+      "core/store/root.store.ts",
+      "core/store/theme.store.ts",
+      "core/store/user.store.ts",
+      "core/store/workspace.store.ts",
+      "ee/components/authentication/authentication-modes.tsx",
+      "ee/components/authentication/index.ts",
+      "ee/components/common/index.ts",
+      "ee/store/root.store.ts",
+      "next-env.d.ts",
+      "next.config.js",
+      "postcss.config.js",
+      "tailwind.config.js"
+    ]
+  }
+}

@@ -95,3 +95,11 @@ dev-editor
 # Redis
 *.rdb
 *.rdb.gz
+
+# Bugster
+.bugster/results/
+.bugster/screenshots/
+.bugster/videos/
+.bugster/logs/
+.bugster/reports/
+*.bugster.log

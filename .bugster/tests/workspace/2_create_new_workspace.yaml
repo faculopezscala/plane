@@ -1,0 +1,10 @@
+name: Create New Workspace
+page: /workspace/create
+page_path: app/workspace/create/page.tsx
+task: Test the workspace creation functionality
+steps:
+- Navigate to the workspace creation page
+- Fill in the required fields in the WorkspaceCreateForm
+- Submit the form
+- Verify the workspace is created and user is redirected to the workspace list
+expected_result: User should be able to create a new workspace

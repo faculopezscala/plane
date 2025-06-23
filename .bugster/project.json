@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "timestamp": 1750689619756,
+    "version": 2,
+    "git": {
+      "branch": "preview",
+      "commit": "7045a1f2af11b1fc89d0ab87671a2312c37d7b5c"
+    }
+  },
+  "data": {
+    "frameworks": [
+      {
+        "id": "next",
+        "name": "Next.js",
+        "dir_path": "/Users/facundolopezscala/coding-repos/plane/plane/admin"
+      }
+    ]
+  }
+}

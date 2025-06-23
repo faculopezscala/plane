@@ -1,0 +1,7 @@
+base_url: http://localhost:3000
+credentials:
+- id: facundo-personal
+  password: Bugster2025**
+  username: facundolopezscala@gmail.com
+project_id: tO1CnWdpOZBen8HANJ6C
+project_name: plane
