@@ -1,5 +1,6 @@
 "use client";
 
+// Test trigger comment - modified for Bugster testing
 import { observer } from "mobx-react";
 // components
 import { WorkspaceCreateForm } from "./form";

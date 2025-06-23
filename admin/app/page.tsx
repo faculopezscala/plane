@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+// Test trigger comment - modified for Bugster testing
 // components
 import { InstanceSignInForm } from "@/components/login";
 // layouts

@@ -1,5 +1,6 @@
 "use client";
 
+// Test trigger comment - modified for Bugster testing
 import { useState } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
