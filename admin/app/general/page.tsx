@@ -1,4 +1,5 @@
 "use client";
+// Test trigger comment - modified for Bugster testing
 import { observer } from "mobx-react";
 // hooks
 import { useInstance } from "@/hooks/store";
